@@ -1,0 +1,13 @@
+@model lab3.Models.Student
+
+<h2>Student Details</h2>
+
+<div>
+    <h4>Full Name: @Model.FullName</h4>
+    <h4>Course: @Model.Course.Title</h4>
+</div>
+
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</p>
