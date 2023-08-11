@@ -42,7 +42,6 @@ namespace lab3.Controllers
                 return NotFound();
             }
 
-            return View(course);
         }
 
         // GET: Courses/Create
