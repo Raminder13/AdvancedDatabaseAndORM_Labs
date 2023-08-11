@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using lab3.Data;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<lab3Context>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("lab3Context") ?? throw new InvalidOperationException("Connection string 'lab3Context' not found.")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Lab3ConnectionString") ?? throw new InvalidOperationException("Connection string 'lab3Context' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
